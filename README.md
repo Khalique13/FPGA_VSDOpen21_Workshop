@@ -10,11 +10,10 @@
 - [Benefits](#benefits-of-virtual-fpga)
 - [Verilog](#verilog)
 - [Makerchip](#makerchip)
-  - [Virtual FPGA](#virtual-fpga)
-  - [Seven Segment Display](#seven-segment-display)
+- [Seven Segment Display](#seven-segment-display)
 - [4-way Traffic Light Controller](#4-way-traffic-light-controller)
-  - [Finite State Machines](#finite-state-machines)
-  - [Implementation of Traffic Light Controller](#implementation-of-traffic-light-controller)
+- [Finite State Machines](#finite-state-machines)
+- [Implementation of Traffic Light Controller](#implementation-of-traffic-light-controller)
 
 
 - [References](#references)
@@ -73,7 +72,13 @@ Makerchip is a free IDE which is used to develop Integrated Circuits, where you 
 
 ### 3. LED Binary Counter
 
-![counter-gif](https://user-images.githubusercontent.com/80625515/138105617-7f7c677d-9f3f-4109-ae0e-96007454f48d.gif)
+![counter-gif](https://user-images.githubusercontent.com/80625515/138130357-b379156c-6841-46c8-a41e-18301fee9cd5.gif)
+
+
+### Interfacing LED Lab 
+
+![lab1](https://user-images.githubusercontent.com/80625515/138124739-d1545d84-fdad-4363-a568-24a45eb46237.gif)
+
 
 ## Seven Segment Display
 
@@ -83,10 +88,13 @@ Design of Seven-Segment Display
 
 ![design-7-display](https://user-images.githubusercontent.com/80625515/138107786-7a4622a1-24e0-4ff0-809b-51bac3187802.png)
 
-Interfacing 7-segment Display
+## Interfacing Seven Segment Display
 
 ![Screenshot from 2021-10-20 13-00-03](https://user-images.githubusercontent.com/80625515/138108059-6f6d522c-f322-4c05-a941-2b20c0f0b458.png)
 
+## Interfacing Seven Segment Display lab
+
+![lab-2](https://user-images.githubusercontent.com/80625515/138129945-4121ee36-c364-451f-94f0-731f4e0236ac.gif)
 
 
 ## References
