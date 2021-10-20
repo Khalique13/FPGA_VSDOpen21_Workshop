@@ -74,6 +74,8 @@ Makerchip is a free IDE which is used to develop Integrated Circuits, where you 
 
 ### 3. LED Binary Counter
 
+![counter-gif](https://user-images.githubusercontent.com/80625515/138105617-7f7c677d-9f3f-4109-ae0e-96007454f48d.gif)
+
 ## References
 https://github.com/BalaDhinesh/Digital-Design-on-FPGA--VSDOpen21.git
 
