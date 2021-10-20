@@ -9,15 +9,14 @@
 - [Introduction](#introduction)
 - [Benefits](#benefits-of-virtual-fpga)
 - [Makerchip and Virtual FPGA](#makerchip-and-virtual-fpga)
--- [Virtual FPGA](#virtual-fpga)
--- [LEDs and Seven Segment](#leds-and-seven-segment)
+  - [Virtual FPGA](#virtual-fpga)
+  - [LEDs and Seven Segment](#leds-and-seven-segment)
 
 
 - [4-way Traffic Light Controller](#4-way-traffic-light-controller)
--- [Finite State Machines](#finite-state-machines)
--- [Implementation of Traffic Light Controller](#implementation-of-traffic-light-controller)
+  - [Finite State Machines](#finite-state-machines)
+  - [Implementation of Traffic Light Controller](#implementation-of-traffic-light-controller)
 
-- [Labs]
 
 - [References](#references)
 - [Author](#author)
@@ -75,6 +74,14 @@ Makerchip is a free IDE which is used to develop Integrated Circuits, where you 
 
 ### 3. LED Binary Counter
 
+## References
+https://github.com/BalaDhinesh/Digital-Design-on-FPGA--VSDOpen21.git
 
+## Author
+- Mohammad Khalique khan, Bachelor of Technology (ECE), Aliah University.
+
+## Acknowledgement
+- Bala Dhinesh, Undergrad, IIT Madras
+- Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
 
 
