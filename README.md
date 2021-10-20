@@ -10,12 +10,11 @@
 - [Benefits](#benefits-of-virtual-fpga)
 - [Verilog](#verilog)
 - [Makerchip](#makerchip)
+- [Interfacing LEDs](#interfacing-leds)
 - [Seven Segment Display](#seven-segment-display)
 - [4-way Traffic Light Controller](#4-way-traffic-light-controller)
 - [Finite State Machines](#finite-state-machines)
-- [Implementation of Traffic Light Controller](#implementation-of-traffic-light-controller)
-
-
+- [Traffic Light Controller Lab](#traffic-light-controller-lab)
 - [References](#references)
 - [Author](#author)
 - [Acknowledgement](#acknowledgement)
@@ -60,19 +59,19 @@ Makerchip is a free IDE which is used to develop Integrated Circuits, where you 
 
 
 
-### 1. Interfacing LEDs of Virtual FPGA Board
+## Interfacing LEDs
 
 ![Snap-1](https://user-images.githubusercontent.com/80625515/138098510-93a7bf46-c3a2-41f5-9e79-42e9c9e0385f.png)
 
 
-### 2. Assigning random values to the LEDs
+### Assigning random values to the LEDs
 
 ![snap-2](https://user-images.githubusercontent.com/80625515/138098542-84bc8015-7d37-427c-9740-31a7d50a5fed.png)
 
 
-### 3. LED Binary Counter
+### LED Binary Counter
 
-![counter-gif](https://user-images.githubusercontent.com/80625515/138130357-b379156c-6841-46c8-a41e-18301fee9cd5.gif)
+![counter-gif](https://user-images.githubusercontent.com/80625515/138130852-a8a97faa-12cb-4bc9-afcd-c8c97949069d.gif)
 
 
 ### Interfacing LED Lab 
@@ -84,21 +83,77 @@ Makerchip is a free IDE which is used to develop Integrated Circuits, where you 
 
 ![seven-seg-display-prob](https://user-images.githubusercontent.com/80625515/138107446-6b86aa73-6740-4577-9bc7-c9ca9f032cba.png)
 
-Design of Seven-Segment Display
+### Design of Seven-Segment Display
 
 ![design-7-display](https://user-images.githubusercontent.com/80625515/138107786-7a4622a1-24e0-4ff0-809b-51bac3187802.png)
 
-## Interfacing Seven Segment Display
+### Interfacing Seven Segment Display
 
 ![Screenshot from 2021-10-20 13-00-03](https://user-images.githubusercontent.com/80625515/138108059-6f6d522c-f322-4c05-a941-2b20c0f0b458.png)
 
-## Interfacing Seven Segment Display lab
+### Interfacing Seven Segment Display lab
 
 ![lab-2](https://user-images.githubusercontent.com/80625515/138129945-4121ee36-c364-451f-94f0-731f4e0236ac.gif)
 
+## 4-way Traffic Light Controller
+### Problem Statement
+
+![prob-statement](https://user-images.githubusercontent.com/80625515/138134803-6f3b3b1f-fa2d-43b2-ab63-db88e11f9bfb.png)
+
+## Finite State Machines
+
+- Abstract model of computation that is used to model logic
+- Based on the current state and a given input the machine performs state transitions and produces outputs.
+- Two basic types are Mealy and Moore mahines
+
+![fsm-model](https://user-images.githubusercontent.com/80625515/138136268-3a721727-e955-4e50-82bc-a620e161f94d.png)
+
+
+### Verilog Code for NORTH, SOUTH, EAST and WEST
+```
+NORTH :
+                    begin                      
+                       // Enable first seven segment and set to Green 
+                       digit <= 4'b0111;
+                       segment <= 7'b1110111;
+                        /* TODO: 1. Keep the green NORTH signal active for 8 seconds 
+                                2. Set state of signal to yellow NORTH after that 
+                          HINT: Use if-else block
+                        */
+                       if(count==7) begin
+                             assign state=NORTH_Y;
+                        	  assign count=0;    
+                          end
+                       else assign count=count+1;   
+                    end
+  ```
+
+### Verilog Code for NORTH_Y, SOUTH_Y, EAST_Y and WEST_Y
+```
+NORTH_Y :
+                    begin
+                        // Enable first seven segment and set to Yellow
+                        digit <= 4'b0111;
+                        segment <= 7'b1111110;
+                        /* TODO: 1. Keep the yellow NORTH signal active for 4 seconds 
+                                2. Set state of signal to green SOUTH after that 
+                        */
+                      if(count==3) begin
+                             assign state=SOUTH;
+                        	  assign count=0;    
+                          end
+                       else assign count=count+1;
+							end
+  ```
+## Traffic Light Controller Lab
+
+![final-lab](https://user-images.githubusercontent.com/80625515/138137443-f6c83757-325d-48d3-8e81-53dfe5311f10.gif)
+
+
 
 ## References
-https://github.com/BalaDhinesh/Digital-Design-on-FPGA--VSDOpen21.git
+- https://github.com/BalaDhinesh/Digital-Design-on-FPGA--VSDOpen21.git
+- https://github.com/Eyantra698Sumanto/Digital-Design-on-FPGA.git
 
 ## Author
 - Mohammad Khalique khan, Bachelor of Technology (ECE), Aliah University.
@@ -106,5 +161,6 @@ https://github.com/BalaDhinesh/Digital-Design-on-FPGA--VSDOpen21.git
 ## Acknowledgement
 - Bala Dhinesh, Undergrad, IIT Madras
 - Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
+- Anagha Ghosh, VSD Corp. Pvt. Ltd.
 
 
