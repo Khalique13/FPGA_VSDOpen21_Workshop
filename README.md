@@ -45,14 +45,14 @@ The detailed information on Virtual FPGA Lab can be found [here](https://github.
 
 - Hardware Description Language
 - Verification 
--- Simulation
--- Timing Analysis
--- Test Analsis
--- Synthesis
+  - Simulation
+  - Timing Analysis
+  - Test Analsis
+  - Synthesis
 - Level of Abstraction 
--- Behavioural Level
--- Register-Transfer Level
--- Gate Level
+  - Behavioural Level
+  - Register-Transfer Level
+  - Gate Level
 
 ## Makerchip 
 
