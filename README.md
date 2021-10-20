@@ -8,11 +8,10 @@
 
 - [Introduction](#introduction)
 - [Benefits](#benefits-of-virtual-fpga)
-- [Makerchip and Virtual FPGA](#makerchip-and-virtual-fpga)
+- [Verilog](#verilog)
+- [Makerchip](#makerchip)
   - [Virtual FPGA](#virtual-fpga)
-  - [LEDs and Seven Segment](#leds-and-seven-segment)
-
-
+  - [Seven Segment Display](#seven-segment-display)
 - [4-way Traffic Light Controller](#4-way-traffic-light-controller)
   - [Finite State Machines](#finite-state-machines)
   - [Implementation of Traffic Light Controller](#implementation-of-traffic-light-controller)
@@ -75,6 +74,20 @@ Makerchip is a free IDE which is used to develop Integrated Circuits, where you 
 ### 3. LED Binary Counter
 
 ![counter-gif](https://user-images.githubusercontent.com/80625515/138105617-7f7c677d-9f3f-4109-ae0e-96007454f48d.gif)
+
+## Seven Segment Display
+
+![seven-seg-display-prob](https://user-images.githubusercontent.com/80625515/138107446-6b86aa73-6740-4577-9bc7-c9ca9f032cba.png)
+
+Design of Seven-Segment Display
+
+![design-7-display](https://user-images.githubusercontent.com/80625515/138107786-7a4622a1-24e0-4ff0-809b-51bac3187802.png)
+
+Interfacing 7-segment Display
+
+![Screenshot from 2021-10-20 13-00-03](https://user-images.githubusercontent.com/80625515/138108059-6f6d522c-f322-4c05-a941-2b20c0f0b458.png)
+
+
 
 ## References
 https://github.com/BalaDhinesh/Digital-Design-on-FPGA--VSDOpen21.git
